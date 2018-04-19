@@ -1,0 +1,9 @@
+// ask for a file to be imported 
+fileName = File.openDialog("Select the file to import"); 
+allText = File.openAsString(fileName); tmp = split(fileName,"."); 
+
+// get file format {txt, csv} 
+posix = tmp[lengthOf(tmp)-1]; 
+// parse t2ext by lines 
+
+text = split(allText, "\n");
